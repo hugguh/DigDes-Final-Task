@@ -1,0 +1,75 @@
+// header style
+@import "../utils/libs";
+@import "../utils/vars";
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/reset";
+
+
+html {
+  .navigation {
+    display: flex;
+    flex-flow: row;
+    padding: 0vh 10vw 0vh 10vw;
+    margin: 0;
+    box-shadow: 0px 3px 2px $border-base;
+  }
+
+  .navigation {
+    .nav_item:hover {
+      background: $neutral-placeholder;
+      cursor: pointer;
+    }
+  }
+
+  .first_nav_col {
+    display: flex;
+    flex-flow: row;
+    justify-content: right;
+    flex: 1 1 30%;
+  }
+
+  .second_nav_col {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    flex: 1 1 70%;
+  }
+
+  .nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 0.5vw;
+  }
+
+  .nav_input {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    border: 1px solid $border-light;
+    border-radius: 20px;
+    padding: 0 2vw;
+  }
+
+
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}

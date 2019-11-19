@@ -1,0 +1,173 @@
+// header style
+@import "../utils/libs";
+@import "../utils/vars";
+@import "../utils/mixins";
+@import "../utils/fonts";
+@import "../utils/reset";
+
+
+.center {
+        text-align: center;
+    }
+
+.button-add-sort, .card {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+}
+
+.add-event {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 5vh 10vw;
+}
+
+.button-left, .button-right {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.button-left {
+  background-color: $success-color;
+  color: $default-color;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 1vw;
+
+}
+
+.button-left:hover {
+  background: $neutral-placeholder;
+  cursor: pointer;
+}
+
+.button-right {
+  background-color: $default-color;
+  border: solid 1px $neutral-regular;
+}
+
+.button-right:hover {
+  background: $neutral-placeholder;
+  cursor: pointer;
+}
+
+.button-page {
+  background-color: $default-color;
+  border: solid 1px $neutral-regular;
+  border-radius: 4px;
+  margin: 0vh .5vw 3vh .5vw;
+  box-shadow: $area-shadow;
+}
+
+.button-page:hover {
+  background: $neutral-placeholder;
+  cursor: pointer;
+}
+
+.button-back {
+  display: flex;
+  flex-flow: row;
+  flex: 1 auto;
+  align-items: center;
+  padding-top: 2vw;
+  padding-left: 10vw;
+}
+
+.button-arrow {
+  width: 70px;
+}
+
+.button-arrow-back {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  box-shadow: $area-shadow;
+  margin-right: 2vw;
+}
+
+.button-arrow-back:hover {
+  background: $neutral-placeholder;
+  cursor: pointer;
+}
+
+
+.button-number{
+  width: 25px;
+}
+
+.add-button{
+  padding-top: 4vh;
+}
+
+.card_local {
+  padding: 0 2vw;
+  flex: 1 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: $area-shadow;
+}
+
+.comment {
+  border: solid 1px $neutral-regular;
+}
+
+.card_footer, .card_body {
+  font-size: $secondaryFontSize;
+}
+
+.card_header,.card_body, .card_footer{
+  margin: 10px 0;
+}
+
+.card_footer, .card_header {
+  font-size: $secondaryFontSize;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.card_body{
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+}
+
+.card_head {
+  font-size: $mainFontSize;
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+
+.danger-color{
+  color: $danger-color;
+}
+.light-color {
+  color: $light-color;
+}
+
+.neutral-primary{
+  color: $neutral-primary;
+}
+
+.avatar{
+  border-radius: 50%;
+  height: 30px;
+  margin-right: 3vw;
+}
+
+.button-delete:hover {
+  cursor: pointer;
+}
+
+#dete_input {
+  width: 150px;
+}
